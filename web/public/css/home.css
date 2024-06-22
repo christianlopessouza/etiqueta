@@ -1,0 +1,420 @@
+body {
+    background: #F7F8FA !important;
+    font-family: 'Inter' !important;
+}
+
+a {
+    color: inherit;
+    /* Herda a cor do elemento pai */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    margin: 0;
+    /* Remove margens */
+    padding: 0;
+    /* Remove padding */
+    border: none;
+    /* Remove bordas */
+    font: inherit;
+    /* Herda todas as propriedades de fonte do pai */
+    line-height: inherit;
+    /* Herda a altura da linha */
+    text-transform: none;
+    /* Remove qualquer transformação de texto */
+    text-shadow: none;
+    /* Remove sombra de texto */
+    display: inline;
+    /* Define a exibição inline */
+    vertical-align: baseline;
+    /* Reseta o alinhamento vertical */
+    text-decoration: none !important;
+    width: 100%;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    /* Redefinir estilos para o estado padrão */
+    color: #fff !important;
+    background-color: transparent !important;
+    text-decoration: none !important; 
+    outline: none !important;
+    
+}
+
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    height: 40px;
+}
+
+
+.figma-element {
+    width: 165px;
+    height: 35px;
+    background: linear-gradient(180deg, #505D77 6%, #3D4A65 23%);
+    border: 0.8px solid #2B374F;
+    position: relative;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #fff;
+    box-shadow:
+        inset 0 0 4px rgba(0, 0, 0, 0.2),
+        inset -0.5px 0.5px 0.4px 0.4px #787878,
+        inset 0.5px 0.5px 0.4px 0.4px #787878,
+        inset 0 -3px 0 #35425A;
+}
+
+.figma-element-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 35px;
+    background: linear-gradient(180deg, #4A88FA 6%, #3379F7 23%);
+    border: 0.8px solid #1251C5;
+    position: relative;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #fff;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2), inset -0.5px 0.5px 0.4px 0.4px #5F97FF, inset 0.5px 0.5px 0.4px 0.4px #5F97FF, inset 0 -3px 0 #2D6DE4;
+}
+
+
+
+.figma-element-2 {
+    font-weight: 500;
+    width: 165px;
+    height: 32px;
+    background-color: #ffffff;
+    border: 1px solid #DCDDE2;
+    border-radius: 6px;
+    position: relative;
+    box-shadow:
+        inset 0 0 2px rgba(130, 130, 137, 0.1),
+        inset -0.5px 0.5px 0.4px 0.4px rgba(232, 232, 232, 0.15),
+        inset 0.5px 0.5px 0.4px 0.4px rgba(232, 232, 232, 0.15),
+        inset 0 -3px 1px 1px rgba(232, 232, 232, 0.35);
+}
+
+main #uploader {
+    background: #fff;
+}
+
+button {
+    font-size: 15px !important;
+}
+
+span,
+label {
+    font-size: 14px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.dft-card {
+    background: #ffffff;
+    border: 1px solid #DCDDE2;
+    border-radius: 12px;
+}
+
+.main-sh {
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.dialog {
+    background: #F4F8FC;
+    border-radius: 6px;
+    border: 1px solid #D0DFF3;
+    color: #356AC6;
+}
+
+.dialog h6 {
+    font-weight: 600;
+}
+
+.dialog i {
+    margin-top: 2px;
+}
+
+#upload-area {
+    border-radius: 6px;
+    margin-top: 14px;
+    color: #2B374F;
+    background: #FBFBFB;
+
+}
+
+#upload-area h6 {
+    font-weight: 600;
+}
+
+#upload-area content {
+    display: flex;
+    justify-content: flex-end;
+    height: 150px;
+}
+
+head {
+    background: #fff;
+}
+
+#props {
+    display: flex;
+    flex-direction: column;
+}
+
+#props .intructions {
+    color: #42C5E2;
+    font-weight: 500;
+}
+
+.number {
+    height: 32px;
+    width: 100px;
+}
+
+#props-size .input-group {
+    width: 150px;
+}
+
+#props-size {
+    gap: 22px;
+}
+
+#props footer {
+    border-top: 1px solid red;
+}
+
+#props-size .input-group-text {
+    background: #f6f6f6;
+}
+
+#props-size .form-control:focus {
+    border: 1px solid #ced4da !important;
+}
+
+#props footer {
+    border-top: 1px solid #DCDDE2;
+    min-height: 56px;
+}
+
+#tag-preview-content {
+    /* position: relative; */
+    /* z-index: 1; */
+    /* margin-top: 60px; */
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+
+
+#bkg-tag-preview {
+    position: absolute;
+    background: #3076F8;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    border-radius: 14px;
+}
+
+#tag-preview {
+    padding-top: 70px;
+    height: 100%;
+}
+
+#bkg-tag-preview span {
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+}
+
+#tag-preview-content .dialog {
+    background: #FFF7EC;
+    border: 1px solid #EBD8C6;
+}
+
+#tag-preview-content .dialog i {
+    color: #FFA471;
+    font-size: 18px;
+}
+
+#tag-preview-content .dialog h6 {
+    color: #2B374F;
+}
+
+#tag-preview-content .dialog span {
+    color: #6D7280;
+    margin-left: 26px;
+}
+
+#preview-area {
+    background: #F4F8FC;
+    border-radius: 6px;
+    min-height: 355px;
+    border: 2px dashed #D0DFF3;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.file-loader-content {
+    background: #fbfbfb;
+    border-radius: 6px;
+    padding: 20px;
+    background: #ededed;
+    border: 1px solid #dcdde2;
+}
+
+#uploader.opened #upload-area {
+    border-radius: 6px 6px 0px 0;
+    border-bottom: none !important;
+}
+
+#uploader.opened #load-file {
+    border-radius: 0 0 6px 6px;
+    border-top: 600 !important;
+}
+
+#preview-area .outer-design-preview {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    font-size: 24px;
+    padding: 3px;
+    color: #fff;
+    border: 1px solid #e9eaed;
+}
+
+#preview-area .design-preview {
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+}
+
+#preview-area .bg-gradient-blue {
+    background: linear-gradient(180deg, #6DD9E0 5%, #61A9AD 140%);
+}
+
+#preview-area .bg-gradient-green {
+    background: linear-gradient(180deg, #6DE0A9 5%, #519E79 140%);
+}
+
+#preview-area .arrows-icon {
+    position: relative;
+    color: #DFDFDF;
+    width: 50px;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+#preview-area .arrows-icon i:first-child {
+    position: absolute;
+    left: 10px;
+}
+
+#preview-area .arrows-icon i:last-child {
+    position: absolute;
+    right: 10px;
+    margin-top: 22px;
+}
+
+
+#preview-area .description h6 {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+#preview-area .description span {
+    color: #939393;
+    font-size: 14px;
+}
+
+
+#tag-preview-content footer {
+    background: #EAF1FE;
+    border-top: 1px solid #CBDCFC;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+}
+
+#tag-preview-content footer button {
+    width: 100%;
+    height: 40px;
+}
+
+#props .description h6 {
+    font-weight: 600;
+}
+
+#props .description span {
+    font-weight: 400;
+    font-size: 15px;
+    color: #939393;
+}
+
+
+#props .description i {
+    color: #356AC6;
+}
+
+#props footer button {
+    height: 40px;
+}
+
+.letters-upper-spaced {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+header #main-title * {
+    font-weight: 700 !important;
+}
+
+header #main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #2B374F;
+}
+
+header {
+    height: 200px;
+    background: #fff;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #E4E6E8;
+}
+
+.text-highlight {
+    background: #3076F8;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 1px 6px;
+}
+
+.img-previewer {
+    justify-content: start !important;
+}
+
+.img-previewer img {
+    width: 100%;
+}
+
+
+#print-trigger {
+    height: 40px !important;
+    width: 100%;
+}

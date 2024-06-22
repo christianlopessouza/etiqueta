@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Excluir as pastas 'dev' e 'archive' das regras de reescrita
+RewriteCond %{REQUEST_URI} ^/(dev|archive)/ [NC]
+RewriteRule ^ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ public/index.php?url=$1 [QSA,L]
+
+<IfModule mod_php5.c>
+    php_value memory_limit 512M
+</IfModule>
+
+<IfModule mod_php.c>
+    php_value memory_limit 512M
+</IfModule>

@@ -1,0 +1,8 @@
+{
+    "php.version": "5.6",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#0E332D",
+        "titleBar.activeBackground": "#13473F",
+        "titleBar.activeForeground": "#F3FCFA"
+    }
+}
